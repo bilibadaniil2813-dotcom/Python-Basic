@@ -2,7 +2,7 @@ import re
 from collections import Counter
 
 def popular_words (text, words):
-    """Рахує, скільки разів кожне слово зі списку words зустрічається в text без урахування регістру)."""
+    """Рахує, скільки разів кожне слово зі списку words зустрічається в text (без урахування регістру)."""
     all_words = re.findall(r'\b\w+\b', text.lower())
     counts = Counter(all_words)
     return {word: counts.get(word, 0)for word in words}
