@@ -20,3 +20,6 @@ print('OK')
 
 for word, count in result.items():
     print(f'{word}: {count}')
+
+    radius = (2.5, 10, 5)
+    
